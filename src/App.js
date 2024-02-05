@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import Layout from "./components/Layout";
 import { Link } from "react-router-dom";
+import Registration from "./components/Registration";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/services" element={<Services />} />
         <Route path="/tours" element={<Tours />} />
-        <Route path="/contact" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} /> {/* Added this line for 404 */}
       </Routes>
     </BrowserRouter>
